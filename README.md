@@ -1,7 +1,11 @@
 # PHP-Firebase-Notification-Class
-Send push notification from php curl 
+ This is a simple and powerful php class to end firebase push notification from php curl. It will allow you to push cloud messaging through firebase in 3 different way.
+ 
+1. Send to a single device id
+2. Send to a multiple device ids
+3. Send to a specific topic  subscribers
 
-Initialze notification class and push builder
+To initialize notification class and push builder class, include both files in your autoload file or at the top of the page you want to use this class
 
     <?php
       define("GOOGLE_FCM_API_KEY","AAAAtXpvsYU:APXXX");
@@ -11,7 +15,7 @@ Initialze notification class and push builder
       $push = new Push();
     ?>
 
-Sending a message to a single user can be done like this
+Sending a message to a single device id can be done like this.
 
     <?php
       $push->setNode("notification");
