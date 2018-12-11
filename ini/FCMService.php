@@ -13,8 +13,18 @@
 			$this->FirebaseApikey = $FirebaseApikey;
 		}
 
-		 public function send($sendPushArray, $type = "single") {
+		 /*public function send($sendPushArray, $type = "single") {
 			$sendPushArray =  (($type == "multiple") ?  (array) $sendPushArray : $sendPushArray);
+			return $this->sendPushNotification($sendPushArray);
+		}*/
+		public function send($sendPushArray, $type = "single", $putTo=null) {
+			if($type == "multiple" &&  empty($putTo)){
+				$sendPushArray =  (array) $sendPushArray;
+			}else if(!empty($putTo)){
+				$sendPushArray = array_merge(array("to" => $putTo), $sendPushArray);
+			}else{
+				$sendPushArray =  $sendPushArray;
+			}
 			return $this->sendPushNotification($sendPushArray);
 		}
 		 
