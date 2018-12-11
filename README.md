@@ -59,16 +59,16 @@ Sending a message to a multiple user IDs can be done like this
 
 Setup for push builder 
 
-    * @ $objectnode The send node [data or notification]
-    * @ $to  This could be either string or an array of device ids
-    * @ $title The title of the message you are sending
-    * @ $message Message content
-    * @ $body Attentional body content
-    * @ $image Set an Image 
-    * @ $data Payload
-    * @ $is_topic  For sending message to topic TRUR OR FALS
-    * @ $vibrate Allow vibration 1 | 0
-    * @ $sound  Notification sound 
-    * @ $icon  App icon
-    * @ $priority set notification priority
-    * @ $is_background play in background without showing message
+   * @ $objectnode The send node [data or notification]
+   * @ $to  This could be either string or an array of device ids
+   * @ $title The title of the message you are sending
+   * @ $message Message content
+   * @ $body Attentional body content
+   * @ $image Set an Image 
+   * @ $data Payload
+   * @ $is_topic  For sending message to topic TRUR OR FALS
+   * @ $vibrate Allow vibration 1 | 0
+   * @ $sound  Notification sound 
+   * @ $icon  App icon
+   * @ $priority set notification priority
+   * @ $is_background play in background without showing message
