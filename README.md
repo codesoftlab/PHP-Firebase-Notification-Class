@@ -1,5 +1,5 @@
 # PHP-Firebase-Notification-Class
- This is a simple and powerful php class to end firebase push notification from php curl. It will allow you to push cloud messaging through firebase in 3 different way.
+ This is a simple and powerful php class to send firebase push notification from php curl. It will allow you to push cloud messaging through firebase in 3 different way.
  
 1. Send to a single device id
 2. Send to a multiple device ids
